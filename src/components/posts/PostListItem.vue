@@ -9,6 +9,9 @@
     <div class="post-time">
       {{ postItem.createdAt }}
     </div>
+    <div class="post-time">
+      {{ postItem }}
+    </div>
   </li>
 </template>
 

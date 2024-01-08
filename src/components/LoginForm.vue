@@ -3,7 +3,7 @@
     <div class="form-wrapper form-wrapper-sm">
       <form @submit.prevent="submitForm" class="form">
         <div>
-          <label for="username">id:</label>
+          <label for="username">아이디</label>
           <input id="username" type="text" v-model="username" />
           <!-- <p class="validation-text">
             <span class="warning" v-if="username">
@@ -12,7 +12,7 @@
           </p> -->
         </div>
         <div>
-          <label for="password">pw:</label>
+          <label for="password">비밀번호</label>
           <input id="password" type="text" v-model="password" />
         </div>
         <button :disabled="!password" type="submit" class="btn">

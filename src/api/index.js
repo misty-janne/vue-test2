@@ -22,12 +22,21 @@ function loginUser(userData) {
 
 // 아이디 찾기 API
 function findID(userData) {
-  return instance.post('login', userData);
+  return instance.post('findid', userData);
+}
+// 비밀번호 찾기 API
+function findPW(userData) {
+  return instance.post('findpw', userData);
 }
 
-// 학습 노트 데이터를 조회하는 API
+// 상담내역 데이터를 조회하는 API
 function fetchPosts() {
   return instance.get('posts');
 }
 
-export { registerUser, loginUser, fetchPosts, findID };
+// 사용자 정보를 조회하는 API
+function findByID(userData) {
+  return instance.post('findbyid', userData);
+}
+
+export { registerUser, loginUser, fetchPosts, findID, findPW, findByID };

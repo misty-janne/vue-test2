@@ -3,11 +3,11 @@
     <div class="form-wrapper form-wrapper-sm">
       <form @submit.prevent="submitForm" class="form">
         <div>
-          <label for="username">id: </label>
+          <label for="username">아이디: </label>
           <input id="username" type="text" v-model="username" />
         </div>
         <div>
-          <label for="password">pw: </label>
+          <label for="password">비밀번호: </label>
           <input id="password" type="text" v-model="password" />
         </div>
         <div>
@@ -15,7 +15,7 @@
           <input id="nickname" type="text" v-model="nickname" />
         </div>
         <div>
-          <label for="cellphone">휴대전화번호: </label>
+          <label for="cellphone">휴대폰번호: </label>
           <input id="cellphone" type="text" v-model="cellphone" />
         </div>
         <button type="submit" class="btn">회원 가입</button>

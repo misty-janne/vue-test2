@@ -24,6 +24,10 @@ export default new VueRouter({
       path: '/main',
       component: () => import('@/views/MainPage.vue'),
     },
+    {
+      path: '/info',
+      component: () => import('@/views/MyPage.vue'),
+    },
     // {
     //   path: '/modal',
     //   component: () => import('@/views/MyModal.vue'),
