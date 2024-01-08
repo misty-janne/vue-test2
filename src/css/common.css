@@ -107,6 +107,72 @@ a:hover {
   opacity: 0.5;
   cursor: not-allowed;
 }
+.btn-sm {
+	width: 85px;
+	background: #927dfc;
+	margin: 0.3rem;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	border-radius: .25rem;
+	border: 0 solid #dae1e7;
+	font-size: small;
+	color: white;
+  }
+  .btn-sm-none {
+	width: 85px;
+	background: gray;
+	margin: 0.3rem;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	border-radius: .25rem;
+	border: 0 solid #dae1e7;
+	font-size: small;
+	color: black;
+  }
+  .btn-sml {
+	width: 180px;
+	background: #927dfc;
+	margin: 0.3rem;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	border-radius: .25rem;
+	border: 0 solid #dae1e7;
+	font-size: small;
+	color: white;
+	}
+.btn-sml-none {
+	width: 180px;
+	background: gray;
+	margin: 0.3rem;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	border-radius: .25rem;
+	border: 0 solid #dae1e7;
+	font-size: small;
+	color: black;
+}
+.btn-bl {
+	width: 180px;
+	background: #927dfc;
+	margin: 0.3rem;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	border-radius: .25rem;
+	border: 0 solid #dae1e7;
+	font-size: large;
+	color: white;
+}
+.btn-bl-none {
+	width: 180px;
+	background: gray;
+	margin: 0.3rem;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	border-radius: .25rem;
+	border: 0 solid #dae1e7;
+	font-size: large;
+	color: black;
+}
 .log {
   color: #ff4057;
   font-size: 1rem;

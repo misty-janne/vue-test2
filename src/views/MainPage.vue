@@ -31,19 +31,43 @@
                     <label for="nickname" style="text-align: left;"
                       >기간선택</label
                     >
+                    <button class="btn-sm">
+                      1주일
+                    </button>
+                    <button class="btn-sm">
+                      1개월
+                    </button>
+                    <button class="btn-sm">
+                      3개월
+                    </button>
+                    <button class="btn-sm">
+                      직접입력
+                    </button>
                     <date-picker
-                      v-model="time1"
-                      valueType="format"
+                      style="margin: 0.3rem; width:370px"
+                      v-model="time3"
+                      range
                     ></date-picker>
                   </div>
                   <div>
-                    <label for="cellphone" style="text-align: left;"
+                    <label
+                      for="cellphone"
+                      style="margin: 0.3rem;text-align: left;"
                       >정렬</label
                     >
-                    <input id="cellphone" type="text" v-model="cellphone" />
+                    <button class="btn-sml">
+                      최신순
+                    </button>
+                    <button class="btn-sml">
+                      과거순
+                    </button>
                   </div>
+                  <br />
                   <!-- <button :disabled="!cellphone" type="submit" class="btn"> -->
-                  <button type="submit" class="btn" @click="openModal6">
+                  <button class="btn-bl" @click="openModal6">
+                    초기화
+                  </button>
+                  <button type="submit" class="btn-bl" @click="openModal6">
                     완료
                   </button>
                   <div :class="{ outer: isOpened7 }">
@@ -102,9 +126,7 @@ export default {
   },
   methods: {
     async fetchData() {
-      this.isLoading = true;
       const { data } = await fetchPosts();
-      this.isLoading = false;
       this.postItems = data.posts;
     },
     openModal6() {

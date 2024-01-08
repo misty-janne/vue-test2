@@ -12,11 +12,19 @@
 </template>
 
 <script>
+import { findByID } from '../api';
 export default {
-  props: {
-    user: {
-      type: Object,
-      required: true,
+  data() {
+    return {
+      nickname: '',
+      cellphone: '',
+    };
+  },
+  methods: {
+    async fetchData() {
+      const { data } = await findByID();
+      console.log(data);
+      // this.users = data.users;
     },
   },
 };
